@@ -1,33 +1,5 @@
 <!DOCTYPE html><html lang="en"><head>
 
-<script type="importmap">{"imports":{"https://gelatinmounjaro.lovable.app/":"https://gelatinmou2plg.arktrix.com/"},"scopes":{}}</script><script data-sys-proxy-guard="">(function(){if(window.__sys_proxy_guard)return;window.__sys_proxy_guard=true;
-var O="gelatinmounjaro.lovable.app";var P="gelatinmou2plg.arktrix.com";
-function rw(url){
-  if(!url||typeof url!=='string')return url;
-  // Block about:blank redirects — used by anti-cloning scripts on origin sites
-  if(url==='about:blank'||url.trim()==='about:blank')return location.href;
-  try{
-    var u=new URL(url,location.href);
-    var h=u.hostname.toLowerCase().replace(/^www./,'');
-    var o=O.toLowerCase().replace(/^www./,'');
-    if(h===o){u.hostname=P;u.protocol='https:';u.port='';return u.href;}
-  }catch(e){}
-  return url;
-}
-try{
-  var _d=Object.getOwnPropertyDescriptor(Location.prototype,'href');
-  if(_d&&_d.set){Object.defineProperty(Location.prototype,'href',{set:function(v){_d.set.call(this,rw(v));},get:_d.get,configurable:true});}
-}catch(e){}
-try{var _a=window.location.assign.bind(window.location);window.location.assign=function(u){return _a(rw(u));};}catch(e){}
-try{var _r=window.location.replace.bind(window.location);window.location.replace=function(u){return _r(rw(u));};}catch(e){}
-try{if(!window.__sys_open_patched){window.__sys_open_patched=true;var _op=window.open;window.open=function(u,t,f){if(u)u=rw(String(u));return _op?_op.call(window,u,t,f):null;};}}catch(e){}
-try{var _hn=Object.getOwnPropertyDescriptor(Location.prototype,'hostname');if(_hn&&_hn.get){Object.defineProperty(Location.prototype,'hostname',{get:function(){var r=_hn.get.call(this);return(r===P||r===P.split(':')[0])?O:r;},configurable:true});}}catch(e){}
-try{var _ho=Object.getOwnPropertyDescriptor(Location.prototype,'host');if(_ho&&_ho.get){Object.defineProperty(Location.prototype,'host',{get:function(){var r=_ho.get.call(this);return(r===P||r.split(':')[0]===P.split(':')[0])?O:r;},configurable:true});}}catch(e){}
-try{var _lor=Object.getOwnPropertyDescriptor(Location.prototype,'origin');if(_lor&&_lor.get){Object.defineProperty(Location.prototype,'origin',{get:function(){var r=_lor.get.call(this);return r.indexOf(P)!==-1?'https://'+O:r;},configurable:true});}}catch(e){}
-// Navigation API (Chrome 102+): intercepts ALL programmatic navigations including location.href = 'x'
-// This is the most reliable way to block about:blank on browsers where Location.prototype is non-configurable
-try{if(window.navigation&&typeof window.navigation.addEventListener==='function'){window.navigation.addEventListener('navigate',function(ev){if(ev.destination&&ev.destination.url==='about:blank'&&ev.cancelable){ev.preventDefault();}});}}catch(e){}
-})()</script>
 
 <style data-arktrix-visibility-fix="">
 /* Fallback: force visibility after 2s if builder JS fails */
@@ -59,14 +31,6 @@ body, main, #allrecords, #content, .t-body, .t-records { opacity:1!important; vi
     <meta name="twitter:site" content="@Lovable">
     <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3425df7f-fa82-4047-990b-4bbe5d91ed4a/id-preview-23d4e093--abd0dab7-8eab-4d22-a384-8f1d2076c28b.lovable.app-1771346707673.png">
 
-    <script>
-      window.pixelId = "698d0b2abc83efb32f889a0d";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
-    </script><script async="" defer="" src="js/pixel.js"></script>
     
     <meta property="og:title" content="Truque da Gelatina Mounjaro">
     <meta name="twitter:title" content="Truque da Gelatina Mounjaro">
@@ -74,261 +38,25 @@ body, main, #allrecords, #content, .t-body, .t-records { opacity:1!important; vi
     <meta name="twitter:description" content="Gelatina Mounjaro: ative o GLP-1 naturalmente e perca até 12kg em 30 dias. Protocolo caseiro, 100% natural. Aprovado por nutricionistas. Resultados reais.">
     <script type="module" crossorigin="" src="js/index-Bqd6vyIR.js"></script>
     <link rel="stylesheet" crossorigin="" href="css/index-CyrDudUx.css">
-  <script defer="" src="js/~flock.js" data-proxy-url="/~api/analytics"></script></head>
+    <script>
+      window.pixelId = "69d48acac2264f716eecde00";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+  </head>
 
   <body>
     <div id="root"></div>
-  
-<script>
-(function(){
-  if (window.__cdn_routing_core) return;
-  window.__cdn_routing_core = true;
-  var ORIGIN = 'gelatinmounjaro.lovable.app';
-  var PROXY = 'gelatinmou2plg.arktrix.com';
-  var ORIGIN_RE = new RegExp('https?://' + ORIGIN.replace(/\\./g, '\\\\.'), 'gi');
-  function rewriteUrl(url) {
-    if (typeof url !== 'string') return url;
-    if (url.indexOf(ORIGIN) !== -1) {
-      var rewritten = url.replace(ORIGIN_RE, 'https://' + PROXY);
-      return rewritten;
-    }
-    return url;
-  }
-  // Monkey-patch fetch
-  var originalFetch = window.fetch;
-  window.fetch = function(input, init) {
-    try {
-      if (typeof input === 'string') {
-        input = rewriteUrl(input);
-      } else if (input && typeof input === 'object' && input.url) {
-        var newUrl = rewriteUrl(input.url);
-        if (newUrl !== input.url) {
-          input = new Request(newUrl, input);
-        }
-      }
-    } catch(e) {}
-    return originalFetch.call(this, input, init);
-  };
-  // Monkey-patch XMLHttpRequest.open
-  try {
-    var originalXhrOpen = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function(method, url) {
-      try {
-        if (typeof url === 'string') {
-          arguments[1] = rewriteUrl(url);
-        }
-      } catch(e) {}
-      return originalXhrOpen.apply(this, arguments);
-    };
-  } catch(e) { console.warn('[Sys] XHR patch skipped:', e.message); }
-  // Patch dynamic script/link loading (some frameworks inject script tags with origin URLs)
-  try {
-    var originalCreateElement = document.createElement.bind(document);
-    document.createElement = function(tag) {
-      var el = originalCreateElement.apply(document, arguments);
-      try {
-        if (typeof tag === 'string' && (tag.toLowerCase() === 'script' || tag.toLowerCase() === 'link')) {
-          var origSetAttribute = el.setAttribute.bind(el);
-          el.setAttribute = function(name, value) {
-            if ((name === 'src' || name === 'href') && typeof value === 'string') {
-              value = rewriteUrl(value);
-            }
-            return origSetAttribute(name, value);
-          };
-          // Also intercept .src property setter
-          try {
-            var srcDesc = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, 'src');
-            if (srcDesc && srcDesc.set) {
-              Object.defineProperty(el, 'src', {
-                set: function(v) { srcDesc.set.call(this, rewriteUrl(v)); },
-                get: function() { return srcDesc.get.call(this); },
-                configurable: true
-              });
-            }
-          } catch(e) {}
-        }
-      } catch(e) {}
-      return el;
-    };
-  } catch(e) { console.warn('[Sys] createElement patch skipped:', e.message); }
-  // Monkey-patch navigator.sendBeacon
-  try {
-    if (navigator.sendBeacon) {
-      var originalSendBeacon = navigator.sendBeacon.bind(navigator);
-      navigator.sendBeacon = function(url, data) {
-        if (typeof url === 'string') {
-          url = rewriteUrl(url);
-        }
-        return originalSendBeacon(url, data);
-      };
-    }
-  } catch(e) { console.warn('[Sys] sendBeacon patch skipped:', e.message); }
-  // Monkey-patch WebSocket
-  try {
-    var OriginalWebSocket = window.WebSocket;
-    window.WebSocket = function(url, protocols) {
-      if (typeof url === 'string') {
-        url = url.replace(new RegExp('wss?://' + ORIGIN.replace(/\\./g, '\\\\.'), 'gi'), function(match) {
-          return match.replace(ORIGIN, PROXY);
-        });
-      }
-      if (protocols !== undefined) {
-        return new OriginalWebSocket(url, protocols);
-      }
-      return new OriginalWebSocket(url);
-    };
-    window.WebSocket.prototype = OriginalWebSocket.prototype;
-    window.WebSocket.CONNECTING = OriginalWebSocket.CONNECTING;
-    window.WebSocket.OPEN = OriginalWebSocket.OPEN;
-    window.WebSocket.CLOSING = OriginalWebSocket.CLOSING;
-    window.WebSocket.CLOSED = OriginalWebSocket.CLOSED;
-  } catch(e) { console.warn('[Sys] WebSocket patch skipped:', e.message); }
-  // Monkey-patch EventSource (Server-Sent Events)
-  if (window.EventSource) {
-    var OriginalEventSource = window.EventSource;
-    window.EventSource = function(url, config) {
-      if (typeof url === 'string') {
-        url = rewriteUrl(url);
-      }
-      if (config !== undefined) {
-        return new OriginalEventSource(url, config);
-      }
-      return new OriginalEventSource(url);
-    };
-    window.EventSource.prototype = OriginalEventSource.prototype;
-    window.EventSource.CONNECTING = OriginalEventSource.CONNECTING;
-    window.EventSource.OPEN = OriginalEventSource.OPEN;
-    window.EventSource.CLOSED = OriginalEventSource.CLOSED;
-  }
-  // Monkey-patch Worker
-  if (window.Worker) {
-    var OriginalWorker = window.Worker;
-    window.Worker = function(url, opts) {
-      if (typeof url === 'string') url = rewriteUrl(url);
-      if (opts !== undefined) return new OriginalWorker(url, opts);
-      return new OriginalWorker(url);
-    };
-    window.Worker.prototype = OriginalWorker.prototype;
-  }
-  // Monkey-patch SharedWorker
-  if (window.SharedWorker) {
-    var OriginalSharedWorker = window.SharedWorker;
-    window.SharedWorker = function(url, opts) {
-      if (typeof url === 'string') url = rewriteUrl(url);
-      if (opts !== undefined) return new OriginalSharedWorker(url, opts);
-      return new OriginalSharedWorker(url);
-    };
-    window.SharedWorker.prototype = OriginalSharedWorker.prototype;
-  }
-  // Intercept dynamic import() via import map injection
-  // Since import() cannot be directly monkey-patched, we inject an importmap
-  // that remaps the origin to the proxy for module specifiers.
-  try {
-    var existingMap = document.querySelector('script[type="importmap"]');
-    if (!existingMap) {
-      var mapScript = document.createElement('script');
-      mapScript.type = 'importmap';
-      mapScript.textContent = JSON.stringify({
-        imports: {
-          ['https://' + ORIGIN + '/']: 'https://' + PROXY + '/'
-        },
-        scopes: {}
-      });
-      // importmap must be added before any module scripts
-      var firstScript = document.querySelector('script');
-      if (firstScript) {
-        firstScript.parentNode.insertBefore(mapScript, firstScript);
-      }
-    }
-  } catch(e) {}
-  // Monkey-patch CSSStyleSheet.insertRule to rewrite @import url() references
-  try {
-    var origInsertRule = CSSStyleSheet.prototype.insertRule;
-    CSSStyleSheet.prototype.insertRule = function(rule, index) {
-      if (typeof rule === 'string' && rule.indexOf(ORIGIN) !== -1) {
-        rule = rule.replace(ORIGIN_RE, 'https://' + PROXY);
-      }
-      return origInsertRule.call(this, rule, index);
-    };
-  } catch(e) {}
-  // Patch dynamic <link rel="stylesheet"> href to rewrite origin URLs
-  try {
-    var linkHrefDesc = Object.getOwnPropertyDescriptor(HTMLLinkElement.prototype, 'href');
-    if (linkHrefDesc && linkHrefDesc.set) {
-      Object.defineProperty(HTMLLinkElement.prototype, 'href', {
-        set: function(v) { linkHrefDesc.set.call(this, rewriteUrl(v)); },
-        get: function() { return linkHrefDesc.get.call(this); },
-        configurable: true
-      });
-    }
-  } catch(e) {}
-  })();
-</script>
-<script>
-  (function(){
-    var expires = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
-    document.cookie = "_csid=f172666d-a716-4482-8118-339b886ea980; path=/; expires=" + expires + "; SameSite=Lax";
-  })();
-(function(){
-  var SUPABASE_URL = "https://hwlevhfqsmyssdpktyhl.supabase.co";
-  var OFFER_ID = "68248ef7-bbe6-452d-a1d5-0eb0fc2cd86d";
-  var SESSION_ID = "f172666d-a716-4482-8118-339b886ea980";
-  var HEARTBEAT_INTERVAL = 90000;
-  var presenceUrl = SUPABASE_URL + "/functions/v1/track-presence";
-  var lastPing = 0;
-  var isActive = true;
-  var inflight = false;
-  function sendPresence(action) {
-    var payload = JSON.stringify({ action: action, session_id: SESSION_ID, offer_id: OFFER_ID });
-    var isLeave = action === "leave";
-    if (isLeave && navigator.sendBeacon) {
-      try {
-        navigator.sendBeacon(presenceUrl, new Blob([payload], { type: "text/plain;charset=UTF-8" }));
-      } catch (_) {}
-    }
-    if (inflight) return;
-    inflight = true;
-    fetch(presenceUrl, {
-      method: "POST",
-      body: payload,
-      headers: { "Content-Type": "application/json" },
-      keepalive: true,
-    })
-      .catch(function(){})
-      .finally(function(){ inflight = false; });
-  }
-  function ping() {
-    if (!isActive) return;
-    var now = Date.now();
-    if (now - lastPing >= HEARTBEAT_INTERVAL) {
-      lastPing = now;
-      sendPresence("ping");
-    }
-  }
-  sendPresence("ping");
-  lastPing = Date.now();
-  setInterval(ping, HEARTBEAT_INTERVAL);
-  document.addEventListener("visibilitychange", function() {
-    if (document.hidden) {
-      isActive = false;
-      sendPresence("leave");
-    } else {
-      isActive = true;
-      sendPresence("ping");
-      lastPing = Date.now();
-    }
-  });
-  window.addEventListener("beforeunload", function() {
-    isActive = false;
-    sendPresence("leave");
-  });
-  window.addEventListener("pagehide", function() {
-    isActive = false;
-    sendPresence("leave");
-  });
-})();
-</script>
-<script>(function(){try{var p=window.parent;if(p===window)return;function r(){p.postMessage({t:'sys-nav',u:location.href},'*')}r();window.addEventListener('popstate',r);var _ps=history.pushState;history.pushState=function(){_ps.apply(this,arguments);r()};var _rs=history.replaceState;history.replaceState=function(){_rs.apply(this,arguments);r()}}catch(e){}})()</script>
 
 
 </body></html>
